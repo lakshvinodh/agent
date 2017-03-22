@@ -30,7 +30,7 @@
 
 #wrapper.toggled {
     padding-left: 250px;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 #sidebar-wrapper {
