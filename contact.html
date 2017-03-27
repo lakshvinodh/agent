@@ -129,20 +129,23 @@
                     <a href="#menu-toggle" class="btn btn-default " id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>       
                       </div>
                       <div class="redeem">
-                        <h4>Total Points : 0</h4>
-                        <button type="button" class="btn" data-toggle="modal" data-target="#myModal1">Redeem Points</button>
+                        <h4>Total Points :100</h4>
+                        <button type="button" class="btn" data-toggle="modal" data-target="#myModal1">Redeem</button>
                       </div>
                     <div class="contact-slider-part text-center">
                         <h1>Endorsement form</h1> 
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> 
+                        <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> 
 Lorem Ipsum has been the industry's standard dummy<br>
-text ever since the 1500s, </p>
+text ever since the 1500s, </p>-->
+                    <h2 class="share-inv">Share  Invitation  on</h2>
                  <div class="invitation">
-                  <h2>Share  Invitation  on</h2>
+                  
                   <ul>
-                    <li data-toggle="modal" data-target="#myModal"><img src="image/gmail.jpg"></li>
-                    <li><img src="image/fb.jpg"></li>
-                    <li><img src="image/tw.jpg"></li>
+                    <li data-toggle="modal" data-target="#myModal" class="gmail"><a href="#"><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span> Gmail</a></li>
+                    <li class="fb"><a href=""><sapn><i class="fa fa-facebook" aria-hidden="true"></i></sapn> Facebook</a></li>
+                    <li class="linkedin"><a href=""><sapn><i class="fa fa-linkedin" aria-hidden="true"></i></sapn> Linkedin</a></li>
+                    <li class="tw"><a href=""><sapn><i class="fa fa-twitter" aria-hidden="true"></i></sapn> Twitter</a></li>
+                    </ul>
                  </div>
                  </div>
                  
@@ -154,6 +157,7 @@ text ever since the 1500s, </p>
                 </div>
             </div>
             <div class="reccomend1 text-center">
+            <h2 class="rewards">Our Rewards</h2>
                 
       <div class="carousel slide multi-item-carousel" id="theCarousel">
         <div class="carousel-inner">
@@ -266,7 +270,7 @@ text ever since the 1500s, </p>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+    <div class="modal-dialog mail-part">
     
       <!-- Modal content-->
       <div class="modal-content">
@@ -275,27 +279,46 @@ text ever since the 1500s, </p>
           <h4 class="modal-title">New Message</h4>
         </div>
         <div class="modal-body" style="display:inline-block; width:100%;">
+       
+         <div class="col-md-6 col-sm-6">
           <form action="" class="mail-box">
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="name">Name:</label>
-                <div class="col-sm-10">
-                <input type="email" class="form-control" id="name" placeholder="Enter Name">
-             </div>
-            </div>
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Email:</label>
-                <div class="col-sm-10">
-                <input type="email" class="form-control" id="email" placeholder="Enter email">
-             </div>
-            </div>
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Message:</label>
-                <div class="col-sm-10">
-            <textarea class="form-control" rows="5" style="height:80px;"></textarea>
+          <div class="form-group1">
+          <div class="col-md-12 col-sm-12 padd-mail">
+          <h5>Select address book</h5>
+          <ul><li><a href=""></a></li>
+          </ul>
           </div>
+          </div>
+            <div class="form-group1">
+            <div class="col-md-5 col-sm-5  padd-mail">
+                <label class="control-label" for="name">Name:</label>
+                <input type="email" class="form-control" id="name" placeholder="Enter Name">
+                </div>
+                <div class="col-md-5 col-sm-5  padd-mail">
+                <label class="control-label" for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="col-md-2 col-sm-2  padd-mail">
+                <label class="control-label" for="name"></label>
+                <button class="add-mail">Add</button>
+                </div>
+            </div>
+            <div class="form-group1">
+            <div class="col-md-12 col-sm-12  padd-mail">
+                <label class="control-label" for="email">Message:</label>
+            <textarea class="form-control" rows="5" style="height:80px;"></textarea>
+            <h5>Disclaimer Title</h5>
+            <p style="text-align:left;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+        </div>
         </div>
 
           </form>
+          </div>
+           <div class="col-md-6 col-sm-6">
+           <textarea name="area3" style="width: 300px; height: 100px;">
+  HTML <b>content</b> <i>default</i> in textarea
+</textarea>
+        </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Send Message</button>
@@ -312,38 +335,69 @@ text ever since the 1500s, </p>
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Register</h4>
+          <h4 class="modal-title">Redeem Ponits</h4>
         </div>
         <div class="modal-body" style="display:inline-block; width:100%;">
+        <h4>Register</h4>
+        <p>To be eligible to redeem points please create an account</p>
          <form action="" class="mail-box">
             <div class="form-group">
-                <label class="control-label col-sm-2" for="name">Name:</label>
-                <div class="col-sm-10">
-                <input type="email" class="form-control" id="name" placeholder="Enter Name">
-             </div>
-            </div>
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Email:</label>
-                <div class="col-sm-10">
+                <label class="control-label" for="email">Email</label>
+               
                 <input type="email" class="form-control" id="email" placeholder="Enter email">
-             </div>
+            
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-2" for="pwd">Password:</label>
-               <div class="col-sm-10">
+                <label class="control-label" for="pwd">Password</label>
+              
                 <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-              </div>
+                <span class="eye"><i class="fa fa-eye" aria-hidden="true"></i></span>
+             
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-2" for="pwd1">Confirm Password:</label>
-               <div class="col-sm-10">
+                <label class="control-label" for="pwd1">Confirm Password</label>
+            
                 <input type="password" class="form-control" id="pwd1" placeholder="Enter confirm password">
-              </div>
+              <span class="eye"><i class="fa fa-eye" aria-hidden="true"></i></span>
             </div>
           </form>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Submit</button>
+        <div class="modal-footer help1">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Register</button>
+          <p>Already have an account? <a href="#" class="log" data-toggle="modal" data-dismiss="modal" data-target="#login">Login</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Redeem Ponits</h4>
+        </div>
+        <div class="modal-body" style="display:inline-block; width:100%;">
+        <h4>Login</h4>
+        <p>Please login to your account</p>
+         <form action="" class="mail-box">
+            <div class="form-group">
+                <label class="control-label" for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="pwd">Password</label>
+                 <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                 <span class="eye"><i class="fa fa-eye" aria-hidden="true"></i></span>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer help1">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Login</button>
+          <p>Already have an account? <a href="#" class="log" data-dismiss="modal" data-toggle="modal" data-target="#myModal1">Register</a></p>
         </div>
       </div>
       
@@ -421,6 +475,10 @@ $('.multi-item-carousel .item').each(function(){
     $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
   }
 });
+</script>
+<script type="text/javascript" src="js/nicEdit.js"></script>
+<script type="text/javascript">
+  bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
 </script>
 
 </body>

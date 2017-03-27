@@ -191,7 +191,7 @@ padding-right: 42px; font-weight: bold; font-family: 'Droid Sans', sans-serif; f
 .about p{ font-size: 14px; font-family:Open Sans; line-height: 22px  }
 .about h4{color:rgb(137,2,2); font-size: 20px; font-weight: bold;}
 .about .border{border: 1px solid #ccc; border-radius: 5px; padding: 10px}
-.full-wd-about{ background: url(../image/about.jpg) 0 0px;  background-position: center;  min-height:650px;  background-size: cover;}
+.full-wd-about{ background: url(../image/about.jpg) 0 0px;  background-position: center;  min-height:470px;  background-size: cover;}
 .client-img img{ width:310px; margin-top: 10px;}
 .panel-title a{color:rgb(137,2,2)}
 .panel-body ul li{ border-bottom:1px dotted #ccc; line-height: 40px;}
@@ -222,20 +222,28 @@ display: block !important; z-index: 1000;}
    margin-top: 20px;
 margin-bottom: 30px;
 }
-.invitation{ background: #000; padding-bottom: 40px;
-padding-top: 10px; display: inline-block; padding-left: 30px; padding-right:30px; border-radius: 10px;}
+.invitation{         background: #fff;
+    padding-bottom: 7px;
+    padding-top: 17px;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50px;}
 .invitation h2{color:#fff; font-family: Open Sans; font-size: 22px;  font-weight:bold; padding-bottom:20px;}
 .invitation ul{ padding:0;}
-.invitation ul li{ display: inline-block; padding:5px 10px; list-style-type: none;}
+.invitation ul li{ display: inline-block; padding: 7px 40px; list-style-type: none; border-radius: 20px; margin: 0 5px;}
+.invitation ul li a:focus, .invitation ul li a:hover{ color: #fff; }
+.invitation ul li a{ color: #fff; }
 .mail-box .form-control{ margin-bottom:10px; padding:10px 10px; height: 36px}
 .redeem{ right:30px; position: absolute;}
 .redeem h4{ color:#fff; font-size:18px;}
 .redeem button{ font-size: 18px}
-.reccomend1{ position: absolute; bottom:-69px;  width:100%; left:0; padding: 19px 0;background: rgb(137,1,3);}
-.reccomend{ position:fixed; bottom:0px;  width:100%; left:0; background: #444;padding: 7px 0;}
-.reccomend h4{ color:#fff; font-size: 18px;}
+.reccomend1{ position: absolute; bottom:-116px;  width:100%; left:0; padding: 19px 0;background: rgb(137,1,3);}
+.reccomend{ position:fixed; bottom:0px;  width:100%; left:0; background: #fff;padding: 7px 0;}
+.reccomend h4{ color:#890103; font-size: 18px;}
 .reccomend h4 span{ padding-right:20px;}
 .modal-header{ background: #890202; color: #fff;}
+.rewards{color: #fff; font-size: 22px; margin-top: 0; font-family:ChunkFive;}
 /*.help{ 
 position: fixed;
 right: 0px;
@@ -244,11 +252,27 @@ bottom: 0;
 margin: auto;
 height: 50px;}*/
 .close{ color: #fff;}
-.help button,.redeem button{ background: transparent; border: 2px solid #fff; border-radius: 10px; color:#fff; font-size: 18px; 
-    font-weight: bold; font-family: 'Droid Sans', sans-serif; padding: 6px 20px;  }
-    .help button:hover,.redeem button:hover{ background: #A60000; border: 2px solid #fff; border-radius: 10px; color:#fff;  
-    padding: 6px 20px;  }
-@media(min-width:768px) {
+
+.help button{ background: transparent; border: 2px solid #890103; border-radius: 10px; color:#890103; font-size: 18px; 
+    font-weight: bold; font-family: 'Droid Sans', sans-serif; padding: 6px 30px;  }
+    .help button:hover,.redeem button:hover{ background: #A60000; border: 2px solid #890103; border-radius: 10px; color:#fff;  
+      }
+    .help1 button{ background: transparent; border: 1px solid #890103; border-radius:5px; color:#890103; font-size: 18px; 
+    font-weight: bold; font-family: 'Droid Sans', sans-serif; padding: 6px 40px;   text-align: center;}
+    .help1 button:hover{ background: #A60000; border: 1px solid #890103;  color:#fff;  
+     }
+    .help1{ border-top:none; text-align:center; }
+    .redeem button:hover{ background: #A60000; border: 2px solid #fff; border-radius: 10px; color:#fff;  
+    }
+    .add-mail{ background: transparent; border: 1px solid #890103; border-radius:5px; color:#890103; font-size: 14px; 
+    font-weight: bold; font-family: 'Droid Sans', sans-serif; padding: 6px 15px;   text-align: center; margin-top:5px;}
+    .redeem button{background:rgba(98,98,100,0.6); border: 2px solid #fff; border-radius: 10px; color:#fff; font-size: 18px; 
+    font-weight: bold; font-family: 'Droid Sans', sans-serif; padding: 6px 40px;}
+    .gmail{ background:#f25d00; }
+    .fb{ background: #4460a0; }
+    .linkedin{ background: #007ebb; }
+    .tw{ background: #00aaec; }
+    .share-inv{ color: #fff; font-size: 18px ; font-family: 'Droid Sans', sans-serif;}
     #wrapper {
         padding-left: 300px;
     }
@@ -272,7 +296,27 @@ height: 50px;}*/
     #wrapper.toggled #page-content-wrapper {
         position: relative;
         margin-right: 0;
-    }}
+    }
+    .modal-header{ border-radius: 5px 5px 0 0; }
+    .modal-header h4{ text-align: center; font-family:ChunkFive; font-size: 20px; }
+    .modal-body h4{ text-align: center; color:#890103; font-family:ChunkFive; font-size: 22px; text-transform: uppercase;}
+    .modal-body p{ color: #666; text-align: center; font-size: 14px;}
+    .control-label{font-size: 14px; color: #666; font-weight: 400;}
+    .log{ color: #890103;}
+    .help1 p{ font-size: 14px; margin-top:10px;}
+    .modal-body .form-group{ padding:0 40px; }
+    .btn.focus, .btn:focus, .btn:hover{color: #fff;}
+    .help .btn.focus, .help .btn:focus{color: #890103;}
+    .modal-body .form-group{ position: relative; }
+    .eye{ position: absolute; right: 50px; top:34px; }
+    .eye .fa-eye{color: #888;}
+     .padd-mail{padding-left: 5px; padding-right: 5px;}
+
+   @media (min-width: 768px){
+.mail-part {
+    width: 900px;
+    margin: 30px auto;
+}}
     @media(min-width:768px) and (max-width:1400px){
     .toggled .menu-icon{margin-left: -80px; top:20px;}.toggled .menu-icon { margin-left: -160px; top:20px;} .redeem{top:0px;}}
 }
@@ -291,8 +335,8 @@ width: 120px;}.learn-more{padding: 5px 0px; width: 120px;} #wrapper.toggled #pag
 @media(min-width:768px) and (max-width:979px) {.container{ width:400px }}
 @media(min-width:980px) and (max-width:991px) {.container{ width:600px }}
 @media(min-width:992px) and (max-width:1023px) {.container{ width:750px } .contact-page{height:900px !important; overflow-y: hidden;}}
-@media(min-width:1024px) and (max-width:1280px) {.container{ width:970px }.contact{ height: 650px} .contact-page{height:900px !important; overflow-y: hidden;}}
-@media(min-width:1281px) and (max-width:1400px) {.container{ width:1020px } .contact{ height: 657px}.contact-page{height:900px !important; overflow-y: hidden;}}
+@media(min-width:1024px) and (max-width:1280px) {.container{ width:970px }.contact{ height: 470px} .contact-page{height:900px !important; overflow-y: hidden;}}
+@media(min-width:1281px) and (max-width:1400px) {.container{ width:1020px } .contact{ height: 470px}.contact-page{height:900px !important; overflow-y: hidden;}}
 @media(min-width:1400px) {.container{ width:1200px } .menu-icon{margin-left:-200px; top:30px;}
 .toggled .menu-icon{ margin-left:-340px; top:30px;}.slider-part{top:100px;} .contact{ height: 900px}.contact-page{height:900px !important; overflow-y: hidden;}
 .redeem{top:27px;}.reccomend1{bottom: 74px;}}
