@@ -311,6 +311,8 @@ height: 50px;}*/
     .eye{ position: absolute; right: 50px; top:34px; }
     .eye .fa-eye{color: #888;}
      .padd-mail{padding-left: 5px; padding-right: 5px;}
+     .tan-icon li{list-style-type: none; float: left; padding: 0 10px;}
+     .tan-icon li a img{width:30px;}
 
    @media (min-width: 768px){
 .mail-part {
