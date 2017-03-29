@@ -222,7 +222,7 @@ display: block !important; z-index: 1000;}
    margin-top: 20px;
 margin-bottom: 30px;
 }
-.invitation{         background: #fff;
+.invitation{ background: #fff;
     padding-bottom: 7px;
     padding-top: 17px;
     display: inline-block;
@@ -254,11 +254,11 @@ height: 50px;}*/
 .close{ color: #fff;}
 
 .help button{ background: transparent; border: 2px solid #890103; border-radius: 10px; color:#890103; font-size: 18px; 
-    font-weight: bold; font-family: 'Droid Sans', sans-serif; padding: 6px 30px;  }
+     font-family: 'Droid Sans', sans-serif; padding: 6px 30px;  }
     .help button:hover,.redeem button:hover{ background: #A60000; border: 2px solid #890103; border-radius: 10px; color:#fff;  
       }
     .help1 button{ background: transparent; border: 1px solid #890103; border-radius:5px; color:#890103; font-size: 18px; 
-    font-weight: bold; font-family: 'Droid Sans', sans-serif; padding: 6px 40px;   text-align: center;}
+     font-family: 'Droid Sans', sans-serif; padding: 6px 40px;   text-align: center;}
     .help1 button:hover{ background: #A60000; border: 1px solid #890103;  color:#fff;  
      }
     .help1{ border-top:none; text-align:center; }
@@ -267,7 +267,7 @@ height: 50px;}*/
     .add-mail{ background: transparent; border: 1px solid #890103; border-radius:5px; color:#890103; font-size: 14px; 
     font-weight: bold; font-family: 'Droid Sans', sans-serif; padding: 6px 15px;   text-align: center; margin-top:5px;}
     .redeem button{background:rgba(98,98,100,0.6); border: 2px solid #fff; border-radius: 10px; color:#fff; font-size: 18px; 
-    font-weight: bold; font-family: 'Droid Sans', sans-serif; padding: 6px 40px;}
+     font-family: 'Droid Sans', sans-serif; padding: 6px 40px;}
     .gmail{ background:#f25d00; }
     .fb{ background: #4460a0; }
     .linkedin{ background: #007ebb; }
@@ -311,8 +311,11 @@ height: 50px;}*/
     .eye{ position: absolute; right: 50px; top:34px; }
     .eye .fa-eye{color: #888;}
      .padd-mail{padding-left: 5px; padding-right: 5px;}
+     .tan-icon{padding: 0;}
      .tan-icon li{list-style-type: none; float: left; padding: 0 10px;}
-     .tan-icon li a img{width:30px;}
+     .tan-icon li a img{}
+     .client-del h4{ text-align: left; }
+     .client-del p{  text-align: left; }
 
    @media (min-width: 768px){
 .mail-part {
