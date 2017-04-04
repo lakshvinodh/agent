@@ -241,7 +241,7 @@ margin-bottom: 20px;
 .redeem h4{ color:#fff; font-size:18px;}
 .redeem button{ font-size: 18px}
 .reccomend1{ position: absolute; bottom:-116px;  width:100%; left:0; padding: 19px 0;background: rgb(137,1,3);}
-.reccomend{ position:fixed; bottom:0px;  width:100%; left:0; background: #fff;padding: 7px 0;}
+
 .reccomend h4{ color:#890103; font-size: 18px;}
 .reccomend h4 span{ padding-right:20px;}
 .modal-header{ background: #890202; color: #fff;}
@@ -326,6 +326,8 @@ height: 50px;}*/
     width: 900px;
     margin: 30px auto;
 }}
+@media (max-width: 1023px){
+.reccomend{ position:absolute; bottom:-190px;  width:100%; left:0; background: #fff;padding: 7px 0;}}
     @media(min-width:768px) and (max-width:1400px){
     .toggled .menu-icon{margin-left: -80px; top:20px;}.toggled .menu-icon { margin-left: -160px; top:20px;} .redeem{top:0px;}}
 }
@@ -344,11 +346,12 @@ width: 120px;}.learn-more{padding: 5px 0px; width: 120px;} #wrapper.toggled #pag
 @media(min-width:768px) and (max-width:979px) {.container{ width:400px }}
 @media(min-width:980px) and (max-width:991px) {.container{ width:600px }}
 @media(min-width:992px) and (max-width:1023px) {.container{ width:750px } .contact-page{height:900px !important; overflow-y: hidden;}}
-@media(min-width:1024px) and (max-width:1280px) {.container{ width:970px }.contact{ height: 470px} .contact-page{height:900px !important; overflow-y: hidden;}}
-@media(min-width:1281px) and (max-width:1400px) {.container{ width:1020px } .contact{ height: 470px}.contact-page{height:900px !important; overflow-y: hidden;}}
+@media(min-width:1024px) and (max-width:1280px) {.container{ width:970px }.contact{ height: 470px} .reccomend{ position:fixed; bottom:0px;  width:100%; left:0; background: #fff;padding: 7px 0;}.contact-page{height:900px !important; overflow-y: hidden;}}
+@media(min-width:1281px) and (max-width:1400px) {.container{ width:1020px } .contact{ height: 470px}.contact-page{height:900px !important; overflow-y: hidden;} 
+.reccomend{ position:fixed; bottom:0px;  width:100%; left:0; background: #fff;padding: 7px 0;}}
 @media(min-width:1400px) {.container{ width:1200px } .menu-icon{margin-left:-200px; top:30px;}
 .toggled .menu-icon{ margin-left:-340px; top:30px;}.slider-part{top:100px;} .contact{ height: 900px}.contact-page{height:900px !important; overflow-y: hidden;}
-.redeem{top:27px;}.reccomend1{bottom: 74px;}}
+.redeem{top:27px;}.reccomend1{bottom: 74px;}.reccomend{ position:fixed; bottom:0px;  width:100%; left:0; background: #fff;padding: 7px 0;}}
 
 .multi-item-carousel{
   .carousel-inner{
