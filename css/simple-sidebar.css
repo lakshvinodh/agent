@@ -214,13 +214,14 @@ display: block !important; z-index: 1000;}
     font-family: ChunkFive;
     color: #fff;
     text-shadow: 0px 4px 4px #000;
+    margin-top:10px;
 }
 .contact-slider-part p {
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Droid Sans', sans-serif;
-   margin-top: 20px;
-margin-bottom: 30px;
+   margin-top: 10px;
+margin-bottom: 20px;
 }
 .invitation{ background: #fff;
     padding-bottom: 7px;
@@ -318,6 +319,7 @@ height: 50px;}*/
      .tan-icon li a img{}
      .client-del h4{ text-align: left; }
      .client-del p{  text-align: left; }
+     .arr-one{ left: 200px; position: absolute; margin: -44px 0px;}.arr-one img{ width:80px; }
 
    @media (min-width: 768px){
 .mail-part {
