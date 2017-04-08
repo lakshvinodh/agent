@@ -329,6 +329,7 @@ height: 50px;}*/
     border-bottom-color: #fff;
 }
 .tooltip-inner{background: #fff; color:#890103; max-width:300px !important; padding:10px; margin-top: 30px;}
+.tooltip{z-index: 1000}
  @media (max-width: 767px){.invitation{width: 230px; border-radius: 5px;}}
    @media (min-width: 768px){
 .mail-part {
