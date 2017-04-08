@@ -41,7 +41,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #890202;
+    /*background: #890202;*/
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -85,7 +85,7 @@
     .btn-default.focus, .btn-default:focus,.btn-default:active:focus{background: transparent;  border:none; color:#000;}
 .menu-icon .btn-default .fa-bars{ font-size:20px;}
 .slider-part{ position: absolute; top:30px; left:80px; }
-.client-profile{ text-align: center; padding-top: 30px; }
+.client-profile{ text-align: center; padding-top: 30px; background: rgb(137, 1, 3) none repeat scroll 0 0; padding-bottom: 20px; }
 .slider-part h4{ color: #fff; font-size: 24px; }
 .slider-part ul { padding:0;  margin-top:50px;}
 .slider-part ul li{ float: left; padding-right:40px;  list-style-type: none;}
@@ -105,9 +105,9 @@ margin-top: 80px; }
 .client-profile img{ padding:5px;  width: 176px; height:176px; display: inline-block;}
 .client-profile h2{ font-size: 22px; font-weight: bold; color: #fff; font-family: 'Droid Sans', sans-serif;  margin-top: 0; margin-bottom: 0px}
 .client-profile p{color:#fff; font-family: Open Sans; font-size: 14px; margin-top: 0;}
-.client-profile button{ background: transparent; border: 2px solid #fff; border-radius: 10px; color:#fff; font-size: 18px; 
-    font-weight: bold; font-family: 'Droid Sans', sans-serif; padding: 8px 30px;  }
-    .client-profile button:hover{ background: #A60000; border: 2px solid #fff; border-radius: 10px; color:#fff;  
+.client-profile button{ background: transparent; border: 2px solid #fff; border-radius: 6px; color:#fff; font-size: 18px; 
+    font-weight: 400; font-family: 'Droid Sans', sans-serif; padding: 8px 30px;  }
+    .client-profile button:hover{ background: #A60000; border: 2px solid #fff; border-radius: 6px; color:#fff;  
     padding: 8px 30px;  }
 .sidebar-nav li {
     text-indent: 20px;
@@ -144,7 +144,7 @@ padding-right: 42px; font-weight: bold; font-family: 'Droid Sans', sans-serif; f
     color: #fff;
     background: none;
 }
-.social-media { padding: 0; float: right; margin-right: 36px ; margin-top:20px; position: absolute; bottom: 80px; right: 0;}
+.social-media { padding: 0; float: right; margin-right: 36px ; margin-top:20px; position: absolute; bottom: 70px; right: 0;}
 .social-media li{ float:left; list-style-type: none;  padding:0 7px;}
 .client-logo{ background: #fff; width:100%; /*display: inline-block;*/ text-align: center;  margin-top:10px; position: absolute; bottom: 0;}
 .client-logo img{    padding: 12px 0;}
@@ -198,7 +198,8 @@ padding-right: 42px; font-weight: bold; font-family: 'Droid Sans', sans-serif; f
 .full-wd-innerqust{background: url(../image/inner-page3.jpg) 0 0px;  background-position: center;  min-height:650px;  background-size:cover;}
 .full-wd-innerfncal{background: url(../image/inner-page2.jpg) 0 0px; min-height:650px;  background-position: center;  background-size:cover;}
 .dl-menu li{ position: relative;}
-.dl-menu li span{ display: block; text-align: right; color:#fff;  position: absolute; right: 17px; top:6px; font-size: 20px}
+.dl-menu li span{ display: block; text-align: right; color:rgb(137,1,3);  position: absolute; right: 17px; top:6px; font-size: 20px}
+.dl-menu li span:hover{color:#fff;}
 .back-arrow{text-align: left; color:#fff;  position: absolute; left: 10px; top:5px; font-size: 20px !important;
 display: block !important; z-index: 1000;}
 .full-wd-innerconts{background: url(../image/inner-page1.jpg) 0 0px;  background-position: center;  min-height:650px;  background-size:cover;}
@@ -240,7 +241,7 @@ margin-bottom: 20px;
 .redeem{ right:30px; position: absolute;}
 .redeem h4{ color:#fff; font-size:18px;}
 .redeem button{ font-size: 18px}
-.reccomend1{ position: absolute; bottom:-90px;  width:100%; left:0; padding: 19px 0;background: rgb(137,1,3);}
+.reccomend1{ position: absolute; /*bottom:-90px;*/  width:100%; left:0; padding: 19px 0;background: rgb(137,1,3);}
 
 .reccomend h4{ color:#890103; font-size: 18px;}
 .reccomend h4 span{ padding-right:20px;}
@@ -256,20 +257,20 @@ margin: auto;
 height: 50px;}*/
 .close{ color: #fff;}
 
-.help button{ background: transparent; border: 2px solid #890103; border-radius: 10px; color:#890103; font-size: 18px; 
+.help button{ background: transparent; border: 2px solid #890103; border-radius: 6px; color:#890103; font-size: 18px; 
      font-family: 'Droid Sans', sans-serif; padding: 6px 30px;  }
-    .help button:hover,.redeem button:hover{ background: #A60000; border: 2px solid #890103; border-radius: 10px; color:#fff;  
+    .help button:hover,.redeem button:hover{ background: #A60000; border: 2px solid #890103; border-radius: 6px; color:#fff !important;  
       }
     .help1 button{ background: transparent; border: 1px solid #890103; border-radius:5px; color:#890103; font-size: 18px; 
      font-family: 'Droid Sans', sans-serif; padding: 6px 40px;   text-align: center;}
     .help1 button:hover{ background: #A60000; border: 1px solid #890103;  color:#fff;  
      }
     .help1{ border-top:none; text-align:center; }
-    .redeem button:hover{ background: #A60000; border: 2px solid #fff; border-radius: 10px; color:#fff;  
+    .redeem button:hover{ background: #A60000; border: 2px solid #fff; border-radius: 6px; color:#fff;  
     }
-    .add-mail{ background: transparent; border: 1px solid #890103; border-radius:5px; color:#890103; font-size: 14px; 
+    .add-mail{ background: transparent; border: 1px solid #890103; border-radius:6px; color:#890103; font-size: 14px; 
     font-weight: bold; font-family: 'Droid Sans', sans-serif; padding: 6px 15px;   text-align: center; margin-top:5px;}
-    .redeem button{background:rgba(98,98,100,0.6); border: 2px solid #fff; border-radius: 10px; color:#fff; font-size: 18px; 
+    .redeem button{background:rgba(98,98,100,0.6); border: 2px solid #fff; border-radius: 6px; color:#fff; font-size: 18px; 
      font-family: 'Droid Sans', sans-serif; padding: 6px 40px;}
     .gmail{ background:#f25d00;}
     .fb{ background: #4460a0; }
@@ -320,13 +321,21 @@ height: 50px;}*/
      .client-del h4{ text-align: left; }
      .client-del p{  text-align: left; }
      .arr-one{ left: 200px; position: absolute; margin: -44px 0px;}.arr-one img{ width:80px; }
-
+     .tooltip.bottom .tooltip-arrow {
+    top: 30px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #fff;
+}
+.tooltip-inner{background: #fff; color:#890103; max-width:300px !important; padding:10px; margin-top: 30px;}
+ @media (max-width: 767px){.invitation{width: 230px; border-radius: 5px;}}
    @media (min-width: 768px){
 .mail-part {
-    width: 900px;
-    margin: 30px auto;
-}}
-@media (max-width: 1023px){
+    width: 900px; margin: 30px auto;} }
+    @media (max-width: 359px){.reccomend{ bottom:-183px; position:absolute; width:100%; left:0; background: #fff;padding: 7px 0; }}
+     @media (min-width: 360px) and (max-width: 767px){.reccomend{ bottom:-20px; position:absolute; width:100%; left:0; background: #fff;padding: 7px 0;}}
+@media (min-width: 768px) and (max-width: 1023px){
 .reccomend{ position:absolute; bottom:-190px;  width:100%; left:0; background: #fff;padding: 7px 0;}}
     @media(min-width:768px) and (max-width:1400px){
     .toggled .menu-icon{margin-left: -80px; top:20px;}.toggled .menu-icon { margin-left: -160px; top:20px;} .redeem{top:0px;}}
@@ -340,13 +349,13 @@ width: 120px;}.learn-more{padding: 5px 0px; width: 120px;} #wrapper.toggled #pag
 .v-section h3{font-size: 22px}.v-section p{ font-size: 15px }.social-media{ position: initial;}.client-logo{ position: initial; display: inline-block;}
 .clt-details h3 { border-right: none; margin-left: 0px; text-align: center;}.clt-img img{ position: inherit; top: 10px; left: 37px }
 .toggled .menu-icon{ position: fixed; margin-left: 30px;} .contact-slider-part p{font-size: 13px;} .contact-slider-part h1{font-size: 30px;}
-.mrg{ padding: 0 !important; } .reccomend1{ padding: 21px 0; bottom: -78px }}
+.mrg{ padding: 0 !important; } .reccomend1{ padding: 21px 0; /*bottom: -78px*/ }}
 @media(min-width:768px) {
 .menu-icon{ /*display:none;*/} .clt-details h3{ margin-left: 70px; }}
-@media(min-width:768px) and (max-width:979px) {.container{ width:500px } .reccomend1{bottom:-103px;}}
+@media(min-width:768px) and (max-width:979px) {.container{ width:500px }}
 @media(min-width:980px) and (max-width:991px) {.container{ width:600px }}
 @media(min-width:992px) and (max-width:1023px) {.container{ width:750px } .contact-page{height:900px !important; overflow-y: hidden;}}
-@media(min-width:1024px) and (max-width:1280px) {.container{ width:970px }.contact{ height: 470px} .reccomend{ position:fixed; bottom:0px;  width:100%; left:0; background: #fff;padding: 7px 0;}.contact-page{height:900px !important; overflow-y: hidden;}}
+@media(min-width:1024px) and (max-width:1280px) {.container{ width:970px }.contact{ height: 470px} .reccomend{ position:absolute; bottom:-200px;  width:100%; left:0; background: #fff;padding: 7px 0;}.contact-page{height:900px !important; overflow-y: hidden;}}
 @media(min-width:1281px) and (max-width:1400px) {.container{ width:1020px } .contact{ height: 470px}.contact-page{height:900px !important; overflow-y: hidden;} 
 .reccomend{ position:fixed; bottom:0px;  width:100%; left:0; background: #fff;padding: 7px 0;}}
 @media(min-width:1400px) {.container{ width:1200px } .menu-icon{margin-left:-200px; top:30px;}
