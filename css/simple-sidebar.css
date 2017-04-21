@@ -92,7 +92,7 @@
     .btn-default.focus, .btn-default:focus,.btn-default:active:focus{background: transparent;  border:none; color:#000;}
 .menu-icon .btn-default .fa-bars{ font-size:20px;}
 .slider-part{ position: absolute; top:30px; left:80px; }
-.client-profile{ text-align: center; padding-top: 30px; background: #3c8dbc none repeat scroll 0 0; padding-bottom: 20px; }
+.client-profile{ text-align: center; padding-top: 30px; background: #23527c none repeat scroll 0 0; padding-bottom: 20px; }
 .slider-part h4{ color: #fff; font-size: 24px; }
 .slider-part ul { padding:0;  margin-top:50px;}
 .slider-part ul li{ float: left; padding-right:40px;  list-style-type: none;}
@@ -248,11 +248,11 @@ margin-bottom: 20px;
 .redeem{ right:30px; position: absolute;}
 .redeem h4{ color:#fff; font-size:18px;}
 .redeem button{ font-size: 18px}
-.reccomend1{ position: absolute; /*bottom:-90px;*/  width:100%; left:0; padding: 19px 0;background:#3c8dbc;}
+.reccomend1{ position: absolute; /*bottom:-90px;*/  width:100%; left:0; padding: 19px 0;background:#23527c;}
 
 .reccomend h4{ color:#444; font-size: 18px;}
 .reccomend h4 span{ padding-right:20px;}
-.modal-header{ background: #3C8DBC; color: #fff;}
+.modal-header{ background: #23527c; color: #fff;}
 .rewards{color: #fff; font-size: 22px; margin-top: 0; font-family:ChunkFive;}
 .invitation ul li a span i{ padding-right: 6px }
 /*.help{ 
