@@ -368,6 +368,8 @@ Lorem Ipsum has been the industry's standard  </p>
   </div>
 
  </div>
+
+ <div class="bg-clr hide"></div>
     <!-- /#wrapper -->
 
     <!-- jQuery -->
@@ -425,11 +427,12 @@ $('.multi-item-carousel .item').each(function(){
   $(".chat-icon1").click(function(){
     $(".agent-details1").toggle(500);
   $(this).toggleClass("chattoggle");
+  $(".bg-clr").toggleClass("hide");
 });
 </script>
 <style type="text/css">
   .chat-icon1 i, .chat-icon1.chattoggle i.menu{display: none;}
-  .chat-icon1 i.menu, .chat-icon1.chattoggle i.close{display: inline-block;}
+  .chat-icon1 i.menu, .chat-icon1.chattoggle i.close{display: inline-block; padding: 4px 0px; opacity: 1;}
 </style></body>
 
 </html>
