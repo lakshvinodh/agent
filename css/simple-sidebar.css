@@ -49,10 +49,10 @@
    /* margin-left: -250px;*/
     overflow-y: auto;
     /*background: #890202;*/
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
     box-shadow: 4px 0 5px 0 rgba(50,50,50,0.35);
 }
 
@@ -85,8 +85,8 @@
 }
 .full-wd-img{ background: url(../image/home-slider.jpg) 0 0px; min-height:650px;  background-size:cover;  background-position: center; }
 .right-side{position: relative;}
-.toggled .menu-icon { transform: translate3d(0, 0, 0); transition: all 0.5s ease 0s;}
-.menu-icon{ position: fixed; top:10px; margin-left:70px; z-index: 1000;}
+.toggled .menu-icon { transform: translate3d(0, 0, 0); transition: all 2s ease 0s;}
+.menu-icon{ position: fixed; top:10px; margin-left:70px; z-index: 1000; transform: translate3d(0, 0, 0); transition: all 2s ease 0s;}
 .menu-icon .btn-default{background: rgba(225,225,255,0.5); font-size: 22px; padding: 2px 10px; 
     border:none; color:#000; }
     .btn-default.focus, .btn-default:focus,.btn-default:active:focus{background: transparent;  border:none; color:#000;}
@@ -151,10 +151,17 @@ padding-right: 42px; font-weight: bold; font-family: 'Droid Sans', sans-serif; f
     color: #fff;
     background: none;
 }
-.social-media { padding: 0; float: right; margin-right: 36px ; margin-top:20px; position: absolute; bottom: 70px; right: 0;}
-.social-media li{ float:left; list-style-type: none;  padding:0 7px;}
-.client-logo{ background: #fff; width:100%; /*display: inline-block;*/ text-align: center;  margin-top:10px; position: absolute; bottom: 0;}
-.client-logo img{    padding: 12px 0;}
+.social-media {     padding: 8px 0 0;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 61px;
+    right: 0;
+    border-top: 1px solid #23527c;
+    width: 100%;
+    text-align: right;}
+.social-media li{ display:inline-block; list-style-type: none;  padding:0 5px;}
+.client-logo{ background: #ededed; width:100%; /*display: inline-block;*/ text-align: center;  margin-top:10px; position: absolute; bottom: 0;}
+.client-logo img{    padding: 7px 0;}
 .about-section h3{ font-family: ChunkFive;  font-size: 28px; }
 .about-section p{ font-family: Open Sans; font-size: 16px; }
 .about-section a{font-family: Open Sans; font-size: 16px;  font-weight: bold; color: #890202;}
@@ -380,14 +387,15 @@ width: 120px;}.learn-more{padding: 5px 0px; width: 120px;} #wrapper.toggled #pag
 @media(min-width:1024px) and (max-width:1280px) {.container{ width:970px }.contact{ height: 470px} .reccomend{ position:absolute; bottom:-200px;  width:100%; left:0; background: #fff;padding: 7px 0;}.contact-page{height:900px !important; overflow-y: hidden;}}
 @media(min-width:1281px) and (max-width:1400px) {.container{ width:1020px } .contact{ height: 470px}.contact-page{height:900px !important; overflow-y: hidden;} 
 .reccomend{ position:fixed; bottom:0px;  width:100%; left:0; background: #fff;padding: 7px 0;}}
-@media(min-width:1400px) {.container{ width:1200px } .menu-icon{margin-left:-120px; top:30px;}
+@media(min-width:1400px) {.container{ width:1200px } .menu-icon{margin-left:110px; top:30px;}
 .toggled .menu-icon{ margin-left:-340px; top:30px;}.slider-part{top:100px;} .contact{ height: 900px}.contact-page{height:900px !important; overflow-y: hidden;}
 .redeem{top:27px;}.reccomend1{bottom: 74px;}.reccomend{ position:fixed; bottom:0px;  width:100%; left:0; background: #fff;padding: 7px 0;}
 .contact-slider-part p{ margin-top:30px; } .invitation{margin-top:30px;}.arr-one {
     left: 296px;
     margin: -22px 0 0;
     position: absolute;
-}.contact-slider-part{top:130px;}}
+}.contact-slider-part{top:130px;}
+.toggled .menu-icon{margin-left: -100px; top:20px;} }
 
 .multi-item-carousel{
   .carousel-inner{
@@ -437,6 +445,7 @@ padding: 3px 30px;
 /*.mrg:hover{background: #890202}*/
 .carousel-control.right,.carousel-control.left{ background: transparent !important;}
 .bg-clr{ background: rgba(0,0,0,0.5);position: fixed;width: 100%;height: 100%;left: 0;top: 0;}
+.social-media li a img{ width: 37px }
 
 
 
