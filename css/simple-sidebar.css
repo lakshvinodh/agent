@@ -387,8 +387,7 @@ width: 120px;}.learn-more{padding: 5px 0px; width: 120px;} #wrapper.toggled #pag
 @media(min-width:1024px) and (max-width:128px) {.container{ width:970px }.contact{ height: 470px} .reccomend{ position:absolute; bottom:-200px;  width:100%; left:0; background: #fff;padding: 7px 0;}.contact-page{height:900px !important; overflow-y: hidden;}}
 @media(min-width:1281px) and (max-width:1400px) {.container{ width:1020px } .contact{ height: 470px}.contact-page{height:900px !important; overflow-y: hidden;} 
 .reccomend{ position:fixed; bottom:0px;  width:100%; left:0; background: #fff;padding: 7px 0;}}
-@media(min-width:1400px) {.container{ width:1200px } .menu-icon{margin-left:-60px; top:20px;}
-.toggled .menu-icon{ margin-left:-340px; top:30px;}.slider-part{top:100px;} .contact{ height: 900px}.contact-page{height:900px !important; overflow-y: hidden;}
+@media(min-width:1400px) {.container{ width:1200px } .slider-part{top:100px;} .contact{ height: 900px}.contact-page{height:900px !important; overflow-y: hidden;}
 .redeem{top:27px;}.reccomend1{bottom: 74px;}.reccomend{ position:fixed; bottom:0px;  width:100%; left:0; background: #fff;padding: 7px 0;}
 .contact-slider-part p{ margin-top:30px; } .invitation{margin-top:30px;}.arr-one {
     left: 296px;
@@ -459,6 +458,14 @@ padding: 3px 30px;
     @media (min-width: 1024px) and (max-width: 1280px){.menu-icon {
     margin-left: 240px;}.toggled .menu-icon {
     margin-left: 30px;}}
+    @media (min-width: 1281px) and (max-width: 1400px){
+    .menu-icon{margin-left:200px; top:20px;}
+.toggled .menu-icon{ margin-left:-10px; top:20px;}}
+  @media (min-width: 1401px) and (max-width: 1600px){.menu-icon{margin-left:200px; top:20px;}
+.toggled .menu-icon{ margin-left:-10px; top:20px;}}
+@media (min-width: 1600px){
+.menu-icon{margin-left:-60px; top:20px;}
+.toggled .menu-icon{ margin-left:-340px; top:20px;}}
 
 
 
