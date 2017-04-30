@@ -1,8 +1,107 @@
-@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
+/*
+==============================
+Agent Menu
+==============================
+*/
 
-/* Common styles of menus */
+.drawer-open {
+
+	.agent-menu {
+		box-shadow:4px 0 5px 0 rgba(50,50,50,0.35);
+	}
+}
+
+
+.agent-menu {
+
+	
+	
+	.client-profile {
+
+		text-align:center;
+		background:darken($themeBlue, 30%);
+		color:white;
+		padding:30px 0px;
+		
+		img {
+			
+			border:4px solid white;
+			width:160px;
+			box-shadow: 4px 0 5px 0 rgba(50, 50, 50, 0.8);
+			margin-bottom:10px;
+		}
+
+		.agent-name {
+
+			font-size:2.2rem;
+			line-height:2.8rem;
+			font-weight:800;
+			font-family:$droid
+
+		}
+
+		.fi-slogan {
+			font-size:1.4rem;
+			font-weight:default;
+			line-height:2.4rem;
+			font-family:$droid;
+			font-weight:300;
+			margin-bottom:12px;
+		}
+
+		.chat-btn {
+			font-size:1.6rem;
+			font-family:$droid;
+			font-weight:300;
+			padding:10px 25px;
+			
+			border:1px solid white;
+
+			&:hover {
+				color:darken($themeBlue, 30%);
+			}
+			
+
+
+
+		}
+	}
+
+	.client-logo {
+
+		background:$themeGrey;
+		position:absolute;
+		bottom:0;
+		width:100%;
+		text-align:center;
+
+	}
+
+
+
+}
+
+
+
+/* Menu Navigation */
+.dl-menu li span
+{ 
+	display: block; 
+	text-align: right; 
+	color:darken($themeBlue, 30%);  
+	position: absolute; 
+	right: 17px; 
+	top:10px; 
+	font-size: 20px
+
+}
+
+.dl-menu li span:hover{color:#fff;}
+.back-arrow{text-align: left; color:#fff;  position: absolute; left: 10px; top:5px; font-size: 20px !important;
+display: block !important; z-index: 1000;}
 
 .dl-menuwrapper {
+	@extend %clearfix;
 	width: 300px;
 	
 	float: left;
@@ -12,6 +111,10 @@
 	-webkit-perspective-origin: 50% 200%;
 	perspective-origin: 50% 200%;
 	overflow: hidden;
+	border-bottom:1px solid darken($themeBlue, 30%);
+	ul {
+		margin-bottom:0px;
+	}
 }
 
 .dl-menuwrapper:first-child {
@@ -49,7 +152,7 @@
 		0 10px 0 #fff, 
 		0 20px 0 #fff;
 }
-.dl-menuwrapper{margin-top:10px;}
+/* .dl-menuwrapper{margin-top:10px;} */
 .dl-menuwrapper ul {
 	padding: 0;
 	list-style: none;
@@ -57,30 +160,90 @@
 	transform-style: preserve-3d;	
 }
 
+
 .dl-menuwrapper li {
 	position: relative;
-	
+	&:hover {
 
+		span {
+			color:white;
+		}
+
+		&.dl-back a {
+			
+			&:before {
+
+			color:white;
+			}
+		}
+
+	}
+
+	&.dl-back a
+
+	 {
+
+		&:before {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			line-height: 40px;
+			font-family: FontAwesome;
+			speak: none;
+			-webkit-font-smoothing: antialiased;
+			content: "\f104";
+			color: #173648;
+			margin-right: 10px;
+			font-size: 20px;
+		}
+
+	}
 }
 
 .dl-menuwrapper li a {
 	display: block;
 	position: relative;
-	line-height: 24px;
-	font-weight: 300;
+	line-height: 2.4rem;
+	font-weight: 600;
 	color:#444;
 	outline: none;
 	text-align: left;
-	font-weight: 400; font-family: Droid Sans; font-size:16px;
+	font-family: $droid; 
+	font-size:1.6rem;
 	padding-left: 40px;
-	padding-top:5px;
-	padding-bottom: 5px;
-	
+	padding-top:10px;
+	padding-bottom: 10px;
 
 }
 
+.dl-menuwrapper li {
+
+	&:first-child {
+		span {
+			top:20px;
+		}
+
+		a {
+
+			padding-top:20px;
+		}
+	}
+
+	 &:last-child {
+
+		a {
+
+			padding-bottom:20px;
+		} 
+	}
+}
+
+
+
 .no-touch .dl-menuwrapper li a:hover {
-	background: #23527c;text-decoration: none; color:#fff;
+	background: darken($themeBlue, 30%); 
+	text-decoration: none; 
+	color:#fff;
 	
 }
 /*.dl-menuwrapper li.dl-back > a {
@@ -170,162 +333,9 @@ All this is done for any sub-level being entered.
 	left: 0;
 	margin: 0;
 }
-@media(min-width:1400px) {.dl-menuwrapper li a{ padding-top: 15px; padding-bottom: 15px;}.dl-menu li span{top:16px;}
-.back-arrow{top:16px;}}
-
-/* Animation classes for moving out and in */
-
-.dl-menu.dl-animate-out-1 {
-	-webkit-animation: MenuAnimOut1 0.4s;
-	animation: MenuAnimOut1 0.4s;
-}
 
 
 
-@-webkit-keyframes MenuAnimOut1 {
-	0% { }
-	50% {
-		-webkit-transform: translateZ(-250px) rotateY(30deg);
-	}
-	75% {
-		-webkit-transform: translateZ(-372.5px) rotateY(15deg);
-		opacity: .5;
-	}
-	100% {
-		-webkit-transform: translateZ(-500px) rotateY(0deg);
-		opacity: 0;
-	}
-}
-
-
-
-@keyframes MenuAnimOut1 {
-	0% { }
-	50% {
-		-webkit-transform: translateZ(-250px) rotateY(30deg);
-		transform: translateZ(-250px) rotateY(30deg);
-	}
-	75% {
-		-webkit-transform: translateZ(-372.5px) rotateY(15deg);
-		transform: translateZ(-372.5px) rotateY(15deg);
-		opacity: .5;
-	}
-	100% {
-		-webkit-transform: translateZ(-500px) rotateY(0deg);
-		transform: translateZ(-500px) rotateY(0deg);
-		opacity: 0;
-	}
-}
-
-
-.dl-menu.dl-animate-in-1 {
-	-webkit-animation: MenuAnimIn1 0.3s;
-	animation: MenuAnimIn1 0.3s;
-}
-
-
-@-webkit-keyframes MenuAnimIn1 {
-	0% {
-		-webkit-transform: translateZ(-500px) rotateY(0deg);
-		opacity: 0;
-	}
-	20% {
-		-webkit-transform: translateZ(-250px) rotateY(30deg);
-		opacity: 0.5;
-	}
-	100% {
-		-webkit-transform: translateZ(0px) rotateY(0deg);
-		opacity: 1;
-	}
-}
-
-
-@keyframes MenuAnimIn1 {
-	0% {
-		-webkit-transform: translateZ(-500px) rotateY(0deg);
-		transform: translateZ(-500px) rotateY(0deg);
-		opacity: 0;
-	}
-	20% {
-		-webkit-transform: translateZ(-250px) rotateY(30deg);
-		transform: translateZ(-250px) rotateY(30deg);
-		opacity: 0.5;
-	}
-	100% {
-		-webkit-transform: translateZ(0px) rotateY(0deg);
-		transform: translateZ(0px) rotateY(0deg);
-		opacity: 1;
-	}
-}
-
-
-
-.dl-menuwrapper > .dl-submenu.dl-animate-in-1 {
-	-webkit-animation: SubMenuAnimIn1 0.4s ease;
-	animation: SubMenuAnimIn1 0.4s ease;
-}
-
-
-
-@-webkit-keyframes SubMenuAnimIn1 {
-	0% {
-		-webkit-transform: translateX(50%);
-		opacity: 0;
-	}
-	100% {
-		-webkit-transform: translateX(0px);
-		opacity: 1;
-	}
-}
-
-
-
-@keyframes SubMenuAnimIn1 {
-	0% {
-		-webkit-transform: translateX(50%);
-		transform: translateX(50%);
-		opacity: 0;
-	}
-	100% {
-		-webkit-transform: translateX(0px);
-		transform: translateX(0px);
-		opacity: 1;
-	}
-}
-
-
-
-.dl-menuwrapper > .dl-submenu.dl-animate-out-1 {
-	-webkit-animation: SubMenuAnimOut1 0.4s ease;
-	animation: SubMenuAnimOut1 0.4s ease;
-}
-
-
-@-webkit-keyframes SubMenuAnimOut1 {
-	0% {
-		-webkit-transform: translateX(0%);
-		opacity: 1;
-	}
-	100% {
-		-webkit-transform: translateX(50%);
-		opacity: 0;
-	}
-}
-
-
-
-@keyframes SubMenuAnimOut1 {
-	0% {
-		-webkit-transform: translateX(0%);
-		transform: translateX(0%);
-		opacity: 1;
-	}
-	100% {
-		-webkit-transform: translateX(50%);
-		transform: translateX(50%);
-		opacity: 0;
-	}
-}
 
 
 /* No JS Fallback */
@@ -352,16 +362,36 @@ All this is done for any sub-level being entered.
 	content: '';
 }
 
-/* Colors for demos */
+/* End Menu Navigation */
 
-/* Demo 1 */
-.demo-1 .dl-menuwrapper button {
-	background: #c62860;
+
+/* SOCIAL MEDIA */
+
+.social-media {
+
+	
+	text-align:center;
+
+	a {
+
+		display:inline-block;
+		padding-right:10px;
+		padding-left:10px;
+		margin-top:20px;
+		img {
+			width:46px;
+
+		}
+
+		&:first-child {
+			padding-left:0px;
+		}
+		&:last-child {
+			padding-right:0px;
+		}
+
+
+	}
 }
 
-.demo-1 .dl-menuwrapper button:hover,
-.demo-1 .dl-menuwrapper button.dl-active,
-.demo-1 .dl-menuwrapper ul {
-	background: #9e1847;
-}
-
+/* END SOCIAL MEDIA */
