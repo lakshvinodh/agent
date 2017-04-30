@@ -26,7 +26,7 @@ Agent Menu
 
 		img {
 			
-			width:50px;
+			width:70px;
 			border:2px solid white;
 			box-shadow: 4px 0 5px 0 rgba(50, 50, 50, 0.8);
 			margin-bottom:10px;
@@ -139,7 +139,7 @@ display: block !important; z-index: 1000;}
 	@media #{$sm-min} { 
 		border-bottom:1px solid darken($themeBlue, 30%);
 	}
-	
+
 	ul {
 		margin-bottom:0px;
 	}
