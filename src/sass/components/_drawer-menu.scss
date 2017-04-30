@@ -19,7 +19,7 @@
   z-index: 101;
   top: 0;
   overflow: hidden;
-  width: 300px;
+  width: 280px;
   height: 100%;
   color: #222;
   background-color: #fff;
@@ -101,7 +101,7 @@
 \*!------------------------------------*/
 
 .drawer--left .drawer-nav {
-  left: -300px;
+  left: -280px;
   -webkit-transition: left .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
   transition: left .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
 }
@@ -113,7 +113,7 @@
 }
 
 .drawer--left.drawer-open .drawer-hamburger {
-  left: 300px;
+  left: 280px;
 }
 
 /*!------------------------------------*\
@@ -121,7 +121,7 @@
 \*!------------------------------------*/
 
 .drawer--right .drawer-nav {
-  right: -300px;
+  right: -280px;
   -webkit-transition: right .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
   transition: right .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
 }
@@ -133,7 +133,7 @@
 }
 
 .drawer--right.drawer-open .drawer-hamburger {
-  right: 300px;
+  right: 280px;
 }
 
 /*!------------------------------------*\
@@ -304,15 +304,15 @@
 
 @media (min-width: 75em) {
   .drawer--sidebar .drawer-nav {
-    width: 300px;
+    width: 280px;
   }
 
   .drawer--sidebar.drawer--left .drawer-contents {
-    margin-left: 300px;
+    margin-left: 280px;
   }
 
   .drawer--sidebar.drawer--right .drawer-contents {
-    margin-right: 300px;
+    margin-right: 280px;
   }
 
   /*! container */
@@ -428,7 +428,7 @@
   /*! dropdown */
   .drawer-navbar .drawer-dropdown-menu {
     position: absolute;
-    width: 300px;
+    width: 280px;
     border: 1px solid #ddd;
   }
 
