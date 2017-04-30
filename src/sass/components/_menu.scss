@@ -21,7 +21,11 @@ Agent Menu
 		text-align:center;
 		background:darken($themeBlue, 30%);
 		color:white;
-		padding:30px 0px;
+		padding:10px 0px;
+		
+		@media #{$sm-min} { 
+			padding:30px 0px;
+		}
 		
 
 		img {
