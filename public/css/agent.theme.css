@@ -8780,8 +8780,13 @@ Agent Menu
   color: #173648;
   position: absolute;
   right: 17px;
-  top: 10px;
+  top: 5px;
   font-size: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .dl-menu li span {
+    top: 10px;
+  }
 }
 
 .dl-menu li span:hover {
@@ -8874,7 +8879,7 @@ Agent Menu
 }
 .dl-menuwrapper li.dl-back a:before {
   position: absolute;
-  top: 10px;
+  top: 0px;
   left: 10px;
   line-height: 40px;
   font-family: FontAwesome;
@@ -8885,30 +8890,55 @@ Agent Menu
   margin-right: 10px;
   font-size: 20px;
 }
+@media only screen and (min-width: 768px) {
+  .dl-menuwrapper li.dl-back a:before {
+    top: 10px;
+  }
+}
 
 .dl-menuwrapper li a {
   display: block;
   position: relative;
-  line-height: 2.4rem;
+  line-height: 2.2rem;
   font-weight: 600;
   color: #444;
   outline: none;
   text-align: left;
   font-family: "Droid Sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-left: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+@media only screen and (min-width: 768px) {
+  .dl-menuwrapper li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
 }
 
 .dl-menuwrapper li:first-child span {
-  top: 20px;
+  top: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .dl-menuwrapper li:first-child span {
+    top: 20px;
+  }
 }
 .dl-menuwrapper li:first-child a {
-  padding-top: 20px;
+  padding-top: 10px;
 }
-.dl-menuwrapper li:last-child a {
-  padding-bottom: 20px;
+@media only screen and (min-width: 768px) {
+  .dl-menuwrapper li:first-child a {
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .dl-menuwrapper li:last-child a {
+    padding-bottom: 20px;
+  }
 }
 
 .no-touch .dl-menuwrapper li a:hover {
